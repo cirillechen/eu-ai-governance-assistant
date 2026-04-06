@@ -1,0 +1,148 @@
+Information for individuals
+The rights you have over your personal data under the GDPR, how to exercise these rights, and more.
+
+Your rights
+Under the General Data Protection Regulation (GDPR), you have the following rights over your personal data:
+
+Right to be informed: You can obtain information about the processing of your personal data.
+Right of access: You can obtain access to the personal data held about you.
+Right to rectification: You can ask for incorrect, inaccurate or incomplete personal data to be corrected.
+Right to erasure: You can request that personal data be erased when it’s no longer needed or if processing it is unlawful.
+Right to restriction of processing: You can request the restriction of the processing of your personal data in specific cases.
+Right to data portability: You can receive your personal data in a machine-readable format and send it to another controller.
+Right to object: You can object to the processing of your personal data for marketing purposes or on grounds relating to your particular situation.
+Rights in relation to automated decision-making and profiling: You can request that decisions based on your personal data and that significantly affect you are made by natural persons, not only by computers.
+Read Chapter III of the GDPR for more information
+
+Right to be informed
+
+What information should I receive when my personal data is processed?
+Right of access
+
+How can I access my personal data held by a company or organisation?
+Right to rectification
+
+My data is incorrect, can I correct it?
+Right to erasure
+
+Can I ask a company to delete my personal data?
+Right to restriction of processing
+
+When can I exercise my right to restrict the processing of my personal data?
+Right to data portability
+
+Can I ask a company or organisation to send me my personal data so that I can use it somewhere else?
+Right to object
+
+Can I ask a company or organisation to stop processing my personal data?
+Rights in relation to automated decision-making and profiling
+
+Can I be subject to automated individual decision-making, including profiling?
+Exercising your rights
+To exercise your rights you should contact the company or organisation processing your personal data, also known as the controller. If the company or organisation has a Data Protection Officer (DPO) you may address your request to the DPO. The company or organisation must respond to your requests without undue delay and at the latest within 1 month. 
+
+If the company or organisation does not intend to comply with your request they must state the reason why. You may be asked to provide information to confirm your identity (for instance by clicking a verification link, entering a username or password) in order to exercise your rights.
+
+The individuals’ rights provided by the GDPR apply across the EU, regardless of where the data is processed and where the company or organisation is established. These rights also apply when you buy goods and services from non-EU companies operating in the EU.
+
+
+What should I do if I think that my personal data protection rights haven’t been respected?
+
+What happens if data I have shared is leaked?
+
+What are Data Protection Authorities (DPAs) and how do I contact them?
+
+Can a non-governmental organisation (NGO) make claims on my behalf?
+
+Can I claim compensation?
+Read about how companies or organisations should deal with requests concerning the exercise of your rights
+
+Consent in data protection
+
+What is a valid consent?
+The GDPR applies strict rules for processing data based on consent. The purpose of these rules is to ensure that the individual understands what he or she is consenting to. Consent must be freely given, specific, informed and unambiguous.
+
+A consent request needs to be presented in a clear and concise way, using language that is easy to understand, and be clearly distinguishable from other pieces of information such as terms and conditions. The request has to specify what use will be made of your personal data and include contact details of the company processing the data.
+
+Informed consent means that you must be given information about the processing of your personal data, including at least: 
+
+the identity of the organisation processing data
+the purposes for which the data is being processed
+the type of data that will be processed
+the possibility to withdraw consent (for example by sending an email to withdraw consent)
+where applicable, the fact that the data will be used for decision-making based solely on automated processing, including profiling
+information about whether the consent is related to an international transfer of your data, the possible risks of data transfers to countries outside the EU if those countries are not the subject of a Commission adequacy decision and there are no adequate safeguards
+Examples
+Consent not requested as per terms of the law
+
+You enrol at a music school to take piano classes. The enrolment form contains a long document drafted in small print using highly legal and technical terms, which includes the possibility that the school may pass on your personal details to retailers selling musical instruments. The school is in breach of the law as your consent to receive marketing material (potentially from instrument retailers) was not requested as stipulated by law. 
+
+You are opening a bank account online and want to confirm your request. You are shown a page with two tick boxes saying ‘I accept the terms and conditions’ and ‘I agree that the decision whether I am entitled to a credit card is solely based upon profiling without any human intervention’. Both tick boxes are activated (checked) by default. You have to deactivate the tick box if you do not want to be subject to a decision on whether you are entitled to a credit card based solely on profiling. Even if you do not deactivate the tick box, the bank would not have obtained valid consent as pre-ticked boxes are not considered to be valid consent under the GDPR.
+
+References
+Articles 6 and 7 and Recitals (42) and (43) of the GDPR
+EDPB Guidelines on Consent under Regulation (EU) 2016/679
+
+Can my employer require me to give my consent to use my personal data?
+The employer-employee situation is generally considered as an imbalanced relationship in which the employer wields more power than the employee. Since consent has to be freely given, and in light of the imbalanced relationship, your employer in most cases can’t rely on your consent to use your data.
+
+There might be situations in which processing of an employee’s personal data based on the employee’s consent is lawful, especially if there cannot be any adverse consequences whether or not the consent is given. For example, if a company grants benefits to the employee or their family members (e.g. discounts on the company’s services), processing of the employee's personal data is allowed and lawful, if informed prior consent was given.
+
+Example
+Consent not valid
+
+Your employer believes that work productivity needs to be improved. To do this he intends to install CCTV cameras in the corridors and at the entrance to the bathrooms. He asks you to give your consent so that he can monitor your movements and the time spent out of office. Even if you do consent, it would be considered invalid and your employer can’t install CCTV based on that consent.
+
+References
+Articles 7 and 88 and Recital (43) of the GDPR
+Article 29 Working Party Guidelines on Consent under Regulation (EU) 2016/679 (WP 259)
+Article 29 Working Party Opinion 2/2017 on data processing at work (WP 249)
+EDPB Guidelines 5/2020 on consent under Regulation 2016/679
+
+Can my child’s personal data be processed without my consent?
+Additional protection is granted to this type of personal data since children are less aware of the risks and consequences of sharing data and of their rights. Any information addressed specifically to a child should be adapted to be easily accessible, using clear and plain language.
+
+For most online services the consent of the parent or guardian is required in order to process a child’s personal data on the grounds of consent up to a certain age. This applies to social networking sites as well as to platforms for downloading music and buying online games.
+
+The age threshold for obtaining parental consent is established by each EU Member State and can be between 13 and 16 years. You should check the age threshold with your National Data Protection Authority.
+
+Companies have to make reasonable efforts, taking into consideration available technology, to check that the consent given is truly in line with the law. This may involve implementing age-verification measures such as asking a question that an average child would not be able to answer or requesting that the minor provides his parents' email to enable written consent.
+
+Preventive or counselling services offered directly to children are exempted from the requirement for parental consent as they seek to protect a child’s best interests.
+
+Examples
+Parental consent required
+
+You have a 12-year-old daughter. She would like to join a popular social media network and is asked for consent to process information about her religion. You would need to give your consent in case you want her to join that social media network.
+
+Parental consent not required
+
+Your 17-year-old son is considering participating in an online survey about his clothes consumption patterns. The website requests consent to process his data. As he is over 16, he can give his consent without asking for yours.
+
+References
+Article 8 and Recitals (38) and (58) of the GDPR
+Special categories of personal data
+
+Can data on my views, beliefs, ethnicity, sexual orientation etc. be processed?
+The following categories of personal data are deemed ‘sensitive’ and get specific protection under the GDPR:
+
+data revealing racial or ethnic origin
+data revealing political opinions
+data revealing religious or philosophical beliefs
+data revealing trade union membership
+genetic data
+biometric data for the purpose of uniquely identifying a natural person
+data concerning health
+data concerning individual’s sex life or sexual orientation
+As a general rule, processing of the types of data listed above is prohibited. However, in certain cases, a company or organisation may be allowed to process sensitive personal data, when for example:
+
+you have made your sensitive data manifestly public
+you have given your explicit consent 
+processing is necessary for the exercise of defence of legal claims
+there is a law including adequate safeguards that provides for the processing of sensitive personal data in areas such as public health, employment and social protection
+there is a law including adequate safeguards that provides for processing for archiving purposes in the public interest, scientific or historical research purposes or statistical purposes
+Example
+The National Statistics Office (a State entity) organises a public census every 5 years. You receive a link to a survey that you’re obliged to fill in. It includes fields such as sex and racial or ethnic origin. In such a situation, since the survey is based on a law which serves a public interest aim and contains safeguards to protect your sensitive data (for example, the data is only accessed by authorised recipients working on the census) your sensitive personal data can be processed by the National Statistics Office.
+
+References
+Articles 4(13), 4(14), 4(15) and 9 and Recitals (51) to (56) of the GDPR
