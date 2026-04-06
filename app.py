@@ -1,16 +1,15 @@
 import os
-from dotenv import load_dotenv
+from pathlib import Path
+
 import streamlit as st
+from dotenv import load_dotenv
 
 from langchain_openai import ChatOpenAI, OpenAIEmbeddings
 from langchain_community.vectorstores import FAISS
+from langchain_community.document_loaders import PyPDFLoader, TextLoader
+from langchain.text_splitter import RecursiveCharacterTextSplitter
 
-# Load environment variables
 load_dotenv()
-
-if not os.getenv("OPENAI_API_KEY"):
-    st.error("OPENAI_API_KEY not found. Please check your .env file.")
-    st.stop()
 
 st.set_page_config(page_title="EU AI Governance Assistant", page_icon="📘")
 
@@ -20,7 +19,21 @@ st.caption(
     "This assistant does not provide legal advice."
 )
 
-# Demo questions
+# ---------- API key ----------
+api_key = None
+
+if "OPENAI_API_KEY" in st.secrets:
+    api_key = st.secrets["OPENAI_API_KEY"]
+else:
+    api_key = os.getenv("OPENAI_API_KEY")
+
+if not api_key:
+    st.error("OPENAI_API_KEY not found. Please add it in Streamlit Secrets or your local .env file.")
+    st.stop()
+
+os.environ["OPENAI_API_KEY"] = api_key
+
+# ---------- Demo questions ----------
 demo_questions = [
     "What is the purpose of the EU AI Act?",
     "What is personal data under GDPR?",
@@ -30,7 +43,6 @@ demo_questions = [
     "When do the main obligations of the AI Act start to apply?",
 ]
 
-# Session state for selected question
 if "selected_question" not in st.session_state:
     st.session_state.selected_question = ""
 
@@ -45,30 +57,65 @@ for i, question in enumerate(demo_questions):
         if col2.button(question, key=f"q_{i}", use_container_width=True):
             st.session_state.selected_question = question
 
-# Load vector store
-embeddings = OpenAIEmbeddings()
 
-vectorstore = FAISS.load_local(
-    "vectorstore",
-    embeddings,
-    allow_dangerous_deserialization=True
-)
+# ---------- Build or load vectorstore ----------
+@st.cache_resource
+def get_vectorstore():
+    embeddings = OpenAIEmbeddings()
+    vectorstore_path = "vectorstore"
+    data_path = Path("data/raw")
+
+    if os.path.exists(vectorstore_path):
+        return FAISS.load_local(
+            vectorstore_path,
+            embeddings,
+            allow_dangerous_deserialization=True
+        )
+
+    documents = []
+
+    for file_path in data_path.glob("*"):
+        suffix = file_path.suffix.lower()
+
+        if suffix == ".pdf":
+            loader = PyPDFLoader(str(file_path))
+            documents.extend(loader.load())
+        elif suffix == ".txt":
+            loader = TextLoader(str(file_path), encoding="utf-8")
+            documents.extend(loader.load())
+
+    if not documents:
+        raise ValueError("No documents found in data/raw.")
+
+    splitter = RecursiveCharacterTextSplitter(
+        chunk_size=1000,
+        chunk_overlap=150
+    )
+    chunks = splitter.split_documents(documents)
+
+    vectorstore = FAISS.from_documents(chunks, embeddings)
+    vectorstore.save_local(vectorstore_path)
+    return vectorstore
+
+
+with st.spinner("Loading knowledge base..."):
+    vectorstore = get_vectorstore()
 
 retriever = vectorstore.as_retriever(search_kwargs={"k": 4})
 llm = ChatOpenAI(model="gpt-4o-mini", temperature=0)
 
-# User input
+# ---------- User input ----------
 query = st.text_input(
     "Ask a question about EU AI / GDPR / Data Governance:",
     value=st.session_state.selected_question
 )
 
 if query:
-    docs = retriever.invoke(query)
+    with st.spinner("Searching documents and drafting answer..."):
+        docs = retriever.invoke(query)
+        context = "\n\n".join([doc.page_content for doc in docs])
 
-    context = "\n\n".join([doc.page_content for doc in docs])
-
-    prompt = f"""
+        prompt = f"""
 You are an AI assistant supporting EU AI and data governance research.
 
 Your role:
@@ -86,7 +133,7 @@ Question:
 {query}
 """
 
-    response = llm.invoke(prompt)
+        response = llm.invoke(prompt)
 
     st.subheader("Answer")
     st.write(response.content)
