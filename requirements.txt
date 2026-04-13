@@ -1,10 +1,12 @@
-streamlit
+fastapi
+uvicorn[standard]
+pydantic
 python-dotenv
+requests
 langchain
 langchain-openai
 langchain-community
-openai
 faiss-cpu
-pypdf
+openai
 tiktoken
-langchain-text-splitters
+pypdf

@@ -1,0 +1,22 @@
+[
+  {
+    "question": "What is personal data under GDPR?",
+    "expected_keywords": ["identified", "identifiable", "natural person"]
+  },
+  {
+    "question": "What is the purpose of the EU AI Act?",
+    "expected_keywords": ["safety", "fundamental rights", "trustworthy"]
+  },
+  {
+    "question": "What does the Data Governance Act regulate?",
+    "expected_keywords": ["reuse", "public sector data", "data sharing"]
+  },
+  {
+    "question": "When do the main obligations of the AI Act start to apply?",
+    "expected_keywords": ["2 August 2026", "2 February 2025"]
+  },
+  {
+    "question": "What is the role of data altruism in the Data Governance Act?",
+    "expected_keywords": ["data altruism", "voluntary", "general interest"]
+  }
+]

@@ -1,0 +1,22 @@
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: eu-ai-backend
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: eu-ai-frontend
+    ports:
+      - "8501:8501"
+    environment:
+      API_URL: "http://backend:8000/ask"
+    depends_on:
+      - backend
